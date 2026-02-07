@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Will You Be Mine?</title>
+<style>
+body {
+    text-align: center;
+    font-family: Arial;
+    background: pink;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #ff0055;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#yesBtn {
+    background: green;
+    color: white;
+}
+
+#noBtn {
+    background: red;
+    color: white;
+    position: absolute;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Will you be my girlfriend? ❤️</h1>
+
+<button id="yesBtn" onclick="alert('I Love You 😘')">Yes</button>
+<button id="noBtn">No</button>
+
+<script>
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", function() {
+    const x = Math.random() * (window.innerWidth - 100);
+    const y = Math.random() * (window.innerHeight - 100);
+
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+});
+</script>
+
+</body>
+</html>
